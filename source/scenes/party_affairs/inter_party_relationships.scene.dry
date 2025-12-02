@@ -31,7 +31,7 @@ The <span style="color: #c00000;">**Communists**</span> have always been our clo
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; psii_relation += 2 
+on-arrival: resources -= 1; psii_relation += 2;
 go-to: islam_op if masyumi_in_government = 1 and pni_in_government = 0; islam_coalition if pni_in_government = 1 and masyumi_in_government = 1;
 
 @islam_op
