@@ -89,13 +89,12 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
-Q.kpd_relation = 25;
-Q.ddp_relation = 60;
-Q.dvp_relation = 35;
-// DNVP and NSDAP are invariably hostile
-Q.DNVP_relation = 10;
-Q.NSDAP_relation = 0;
+Q.masyumi_relation = 50;
+Q.demokrat_relation = 25;
+Q.psii_relation = 60;
+Q.kristen_relation = 35;
+Q.katolik_relation = 10;
+Q.kristen_relation = 0;
 
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
@@ -573,8 +572,8 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 1952
 
-It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
+It is a bright time for the Indonesian nation. After a period of struggle, the United States of Indonesia has been dissolved and we have finally secured our sovereignty. Currently, our situation is dire. Hyperinflation and economic deficit is plaguing our economy and our nascent democracy is highly unstable. 
 
-Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
+Now, our task is to form a Konstituante to draft a new constitution for the young Indonesian nation. The Masyumi-dominated cabinet of Soekiman is unpopular, and we stand to gain. Perhaps the next cabient can brought over stability for our nation.
 
 
