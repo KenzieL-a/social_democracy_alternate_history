@@ -31,17 +31,9 @@ The <span style="color: #c00000;">**Communists**</span> have always been our clo
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; psii_relation += 2; go-to: islam_op if masyumi_in_government = 1 and pni_in_government = 0; islam_coalition if pni_in_government = 1 and masyumi_in_government = 1;
+on-arrival: resources -= 1; psii_relation += 2; on-arrival: masyumi_relation += 5*(1 - dissent)
 
-@islam_op
-on-arrival: masyumi_relation += 5*(1 - dissent)
-
-We are currently in opposition to the Masyumi-led government, but that does not preclude the general building of feelings of good will.
-
-@islam_coalition
-on-arrival: masyumi_relation += 8*(1 - dissent)
-
-We are currently coalition partners with them, so improving relations comes naturally.
+test
 
 @nasrani
 subtitle: -1 resources
