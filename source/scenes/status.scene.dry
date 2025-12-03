@@ -20,7 +20,7 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-PNI position: [? if PNI_toleration : toleration ?][? if PNI_in_government : in government - ?][? if PNI_toleration == 0 and PNI_in_government == 0 and PNI_caretaker == 0 : opposition ?][? if PNI_caretaker : caretaker government ?]
+<span style="color: #990000;">**PNI**</span> position: [? if PNI_toleration : toleration ?][? if PNI_in_government : in government - ?][? if PNI_toleration == 0 and PNI_in_government == 0 and PNI_caretaker == 0 : opposition ?][? if PNI_caretaker : caretaker government ?]
 [? if in_weimar_coalition and PNI_in_government: Weimar Coalition ?][? if in_grand_coalition and PNI_in_government: Grand Coalition ?][? if in_popular_front and PNI_in_government: Popular Front ?][? if in_left_front and PNI_in_government: Left Front ?][? if in_pni_majority and PNI_in_government: PNI majority ?][? if in_minority_government and PNI_in_government: minority government ?][? if in_emergency_government and PNI_in_government: emergency government ?]
 
 [? if PNI_in_government and not in_pni_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
@@ -106,21 +106,21 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-PNI: [+ PNI_votes +]%
+<span style="color: #990000;">**PNI**</span>: [+ PNI_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-Masyumi: [+ Masyumi_votes +]%
+<span style="color: #000000;">**Masyumi**</span>: [+ Masyumi_votes +]%
 
-PKI: [+ PKI_votes +]%
+<span style="color: #9c00000;">**PKI**</span>: [+ PKI_votes +]%
 
-PSI: [+ PSI_votes +]%
+<span style="color: #FF6666;">**PSI**</span>: [+ PSI_votes +]%
 
-PSII: [+ PSII_votes +]%
+<span style="color: #003319;">**PSII**</span>: [+ PSII_votes +]%
 
-Parkindo: [+ Parkindo_votes +]%
+<span style="color: #66B2FF;">**Parkindo**</span>: [+ kristen_votes +]%
 
-Katolik: [+ Katolik_votes +]%
+<span style="color: #330000;">**Katolik**</span>: [+ Katolik_votes +]%
 
 Others: [+ other_votes +]%
 
