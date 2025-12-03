@@ -10,12 +10,12 @@ max-visits: 12
 
 = Inter-Party Relationships
 
-The PNI cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of a Grand Coalition of the PNI, Masyumi, and other democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
+The <span style="color: #990000;">**PNI**</span> cannot govern by itself yet. Because we do not have an electoral majority, we need the support of other parties. Recently, our governments have consisted of a Grand Coalition of the <span style="color: #990000;">**PNI**</span>, <span style="color: #000000;">**Masyumi**</span>, and other democratic parties. We can reach out and build additional connections with these parties, or perhaps we can stand alone.
 
-- @nasrani: Work together with the <span style="color: #66B2FF;">**Christian**</span> parties.
-- @islam: Warm our relations with the <span style="color: #000000;">**Islamic**</span> parties.
-- @pki: Strengthen our bonds with the <span style="color: #c00000;">**Communists**</span> Party.
-- @pni_alone: The PNI can stand alone for now.
+- @nasrani: Work together with the <span style="color: #66B2FF;">Christian</span> parties.
+- @islam: Warm our relations with the <span style="color: #000000;">Islamic</span> parties.
+- @pki: Strengthen our bonds with the <span style="color: #c00000;">Communists</span> Party.
+- @pni_alone: The <span style="color: #990000;">PNI</span> can stand alone for now.
 - @easy_discard
 
 
@@ -31,7 +31,7 @@ The <span style="color: #c00000;">**Communists**</span> have always been our clo
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; psii_relation += 2; masyumi_relation += 5*(1 - dissent)
+on-arrival: resources -= 1; masyumi_relation += 5*(1 - dissent)
 
 Even though we have always been in government with them, our relations remain cold, especially of the <span style="color: #000000;">**Masyumi**</span>. However this may change.
 
