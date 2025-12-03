@@ -20,12 +20,12 @@ if (Q.economic_growth) {
 
 Resources available: [+ resources +]
 
-SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
-[? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
+PNI position: [? if PNI_toleration : toleration ?][? if PNI_in_government : in government - ?][? if PNI_toleration == 0 and PNI_in_government == 0 and PNI_caretaker == 0 : opposition ?][? if PNI_caretaker : caretaker government ?]
+[? if in_weimar_coalition and PNI_in_government: Weimar Coalition ?][? if in_grand_coalition and PNI_in_government: Grand Coalition ?][? if in_popular_front and PNI_in_government: Popular Front ?][? if in_left_front and PNI_in_government: Left Front ?][? if in_PNI_majority and PNI_in_government: PNI majority ?][? if in_minority_government and PNI_in_government: minority government ?][? if in_emergency_government and PNI_in_government: emergency government ?]
 
-[? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
+[? if PNI_in_government and not in_PNI_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
-[? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
+[? if PNI_in_government and (in_left_front or in_popular_front): PKI coalition dissent: [+ PKI_coalition_dissent : coalition_dissent +] ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -38,24 +38,24 @@ Chancellor: [+ chancellor +] ([+ chancellor_party +])
 Konstituante composition:
 
 # 1928: 30, 1930: 25, 1932: 22
-{!<span class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
+{!<span class="tooltip-text" title="Social Democratic Party of Germany">PNI</span>!}: [+ PNI_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
-{!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
+{!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Masyumi + BVP</span>!}: [+ Masyumi_r +]%
 # 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_r +]%
+{!<span class="tooltip-text" title="Communist Party of Germany">PKI</span>!}: [+ PKI_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_r +]%
+{!<span class="tooltip-text" title="German Democratic Party">!}PSI: [+ PSI_name +]?]{!</span>!}: [+ PSI_r +]%
 # 1928: 9, 1930: 5
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
+{!<span class="tooltip-text" title="German People's Party">PSII</span>!}: [+ PSII_r +]%
 # 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
+{!<span class="tooltip-text" title="German National People's Party">Parkindo</span>!}: [+ Parkindo_r +]%
 # 1928: 3, 1930: 18
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_r +]%
+{!<span class="tooltip-text" title="National-Socialist German Worker's Party (NaMasyumiis)">Katolik</span>!}: [+ Katolik_r +]%
 # 1928: 9, 1930: 10
 Others: [+ other_r +]%
 
-[? if spd_in_government = 1 : Budget: [+ budget +] ?]
+[? if PNI_in_government = 1 : Budget: [+ budget +] ?]
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
@@ -80,7 +80,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: [+ psi_relation : relationships +]
 
-{!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: [+ psii_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: [+ PSII_relation : relationships +]
 
 {!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_relation : relationships +]
 
@@ -88,13 +88,13 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Catholic Party" style="color: #330000;"><strong>Katolik</strong></span>!}: [+ katolik_relation : relationships +]
 
-= Internal Factions of the SPD
+= Internal Factions of the PNI
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the PKI.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
 
 {!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organiMasyumied workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
 
 {!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
@@ -102,7 +102,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 
 
-[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+[? if PNI_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
 @polls
 on-arrival: {!
@@ -115,36 +115,34 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
-SPD: [+ spd_votes +]%
+PNI: [+ PNI_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-Z + BVP: [+ z_votes +]%
+Masyumi + BVP: [+ Masyumi_votes +]%
 
-KPD: [+ kpd_votes +]%
+PKI: [+ PKI_votes +]%
 
-[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
+PSI: [+ PSI_name +]?]: [+ PSI_votes +]%
 
-DVP: [+ dvp_votes +]%
+PSII: [+ PSII_votes +]%
 
-DNVP: [+ dnvp_votes +]%
+Parkindo: [+ Parkindo_votes +]%
 
-NSDAP: [+ nsdap_votes +]%
+Katolik: [+ Katolik_votes +]%
 
 Others: [+ other_votes +]%
 
-<strong>Detailed results for each demographic<strong>
+**Detailed results for each demographic**
 
-Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Rural: PNI: [+ rural_PNI_display +]%, Masyumi: [+ rural_Masyumi_display +]%, PKI: [+ rural_PKI_display +]%, PSI: [+ PSI_name +]?]: [+ rural_PSI_display +]%, PSII: [+ rural_PSII_display +]%; Parkindo: [+ rural_kristen_display +]%, Katolik: [+ rural_Katolik_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
 
-New Middle Class: SPD: [+ new_middle_spd_display +]%, Z: [+ new_middle_z_display +]%, KPD: [+ new_middle_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ new_middle_ddp_display +]%, DVP: [+ new_middle_dvp_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+Workers: PNI: [+ workers_PNI_display +]%, Masyumi: [+ workers_Masyumi_display +]%, PKI: [+ workers_PKI_display +]%, PSI: [+ PSI_name +]?]: [+ workers_PSI_display +]%, PSII: [+ workers_PSII_display +]%; Parkindo: [+ workers_kristen_display +]%, Katolik: [+ workers_Katolik_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-Old Middle Class: SPD: [+ old_middle_spd_display +]%, Z: [+ old_middle_z_display +]%, KPD: [+ old_middle_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ old_middle_ddp_display +]%, DVP: [+ old_middle_dvp_display +]%; DNVP: [+ old_middle_dnvp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Middle Class: PNI: [+ middle_PNI_display +]%, Masyumi: [+ middle_Masyumi_display +]%, PKI: [+ middle_PKI_display +]%, PSI: [+ PSI_name +]?]: [+ middle_PSI_display +]%, PSII: [+ middle_PSII_display +]%; Parkindo: [+ middle_kristen_display +]%, Katolik: [+ middle_Katolik_display +]%, Others: [+ middle_other_display +]% [? if sapd_formed: SAPD: [+ middle_sapd_display +]% ?]
 
-Rural: SPD: [+ rural_spd_display +]%, Z: [+ rural_z_display +]%, KPD: [+ rural_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ rural_ddp_display +]%, DVP: [+ rural_dvp_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+*Santri*: PNI: [+ santri_PNI_display +]%, Masyumi: [+ santri_Masyumi_display +]%, PKI: [+ santri_PKI_display +]%, PSI: [+ PSI_name +]?]: [+ santri_PSI_display +]%, PSII: [+ santri_PSII_display +]%; Parkindo: [+ santri_kristen_display +]%, Katolik: [+ santri_Katolik_display +]%, Others: [+ santri_other_display +]% [? if sapd_formed: SAPD: [+ santri_sapd_display +]% ?]
 
-Unemployed: SPD: [+ unemployed_spd_display +]%, Z: [+ unemployed_z_display +]%, KPD: [+ unemployed_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ unemployed_ddp_display +]%, DVP: [+ unemployed_dvp_display +]%; DNVP: [+ unemployed_dnvp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
-
-Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD: [+ catholics_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ catholics_ddp_display +]%, DVP: [+ catholics_dvp_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Christians: PNI: [+ christians_PNI_display +]%, Masyumi: [+ christians_Masyumi_display +]%, PKI: [+ christians_PKI_display +]%, PSI: [+ PSI_name +]?]: [+ christians_PSI_display +]%, PSII: [+ christians_PSII_display +]%; Parkindo: [+ christians_kristen_display +]%, Katolik: [+ christians_Katolik_display +]%, Others: [+ christians_other_display +]% [? if sapd_formed: SAPD: [+ christians_sapd_display +]% ?]
 
 Support for the Republic: [+ pro_republic_disp +]%
