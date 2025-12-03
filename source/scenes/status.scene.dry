@@ -76,17 +76,17 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;">**Masyumi**</span>!}: [+ masyumi_relation : relationships +]
+{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masyumi</strong></span>!}: [+ masyumi_relation : relationships +]
 
-{!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;">**PSI**</span>!}: [+ psi_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: [+ psi_relation : relationships +]
 
-{!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;">**PSII**</span>!}: [+ psii_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: [+ psii_relation : relationships +]
 
-{!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;">**PKI**</span>!}: [+ pki_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_relation : relationships +]
 
-{!<span class="tooltip-text" title="Indonesian Christian Party" style="color: #66B2FF;">**Parkindo**</span>!}: [+ kristen_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Christian Party" style="color: #66B2FF;"><strong>Parkindo</strong></span>!}: [+ kristen_relation : relationships +]
 
-{!<span class="tooltip-text" title="Catholic Party" style="color: #330000;">**Katolik**</span>!}: [+ katolik_relation : relationships +]
+{!<span class="tooltip-text" title="Catholic Party" style="color: #330000;"><strong>Katolik</strong></span>!}: [+ katolik_relation : relationships +]
 
 = Internal Factions of the SPD
 
@@ -133,7 +133,7 @@ NSDAP: [+ nsdap_votes +]%
 
 Others: [+ other_votes +]%
 
-**Detailed results for each demographic**
+<strong>Detailed results for each demographic<strong>
 
 Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
