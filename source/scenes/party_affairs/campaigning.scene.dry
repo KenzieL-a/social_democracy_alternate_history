@@ -1,6 +1,6 @@
 title: Campaigning
 new-page: true
-on-arrival: month += 1
+on-arrival: month_action += 1
 max-visits: 36
 is-card: true
 card-image: img/flags.jpg
