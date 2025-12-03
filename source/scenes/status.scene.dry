@@ -37,22 +37,14 @@ Chancellor: [+ chancellor +] ([+ chancellor_party +])
 
 Konstituante composition:
 
-# 1928: 30, 1930: 25, 1932: 22
 {!<span class="tooltip-text" title="Social Democratic Party of Germany">PNI</span>!}: [+ PNI_r +]%
 [? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
-# 1928: 15, 1930: 15, 1932: 
 {!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Masyumi + BVP</span>!}: [+ Masyumi_r +]%
-# 1928: 10, 1930: 13
 {!<span class="tooltip-text" title="Communist Party of Germany">PKI</span>!}: [+ PKI_r +]%
-# 1928: 5, 1930: 4 (as DstP)
 {!<span class="tooltip-text" title="German Democratic Party">PSI</span>!}: [+ PSI_r +]%
-# 1928: 9, 1930: 5
 {!<span class="tooltip-text" title="German People's Party">PSII</span>!}: [+ PSII_r +]%
-# 1928: 14, 1930: 7
 {!<span class="tooltip-text" title="German National People's Party">Parkindo</span>!}: [+ Parkindo_r +]%
-# 1928: 3, 1930: 18
 {!<span class="tooltip-text" title="National-Socialist German Worker's Party (NaMasyumiis)">Katolik</span>!}: [+ Katolik_r +]%
-# 1928: 9, 1930: 10
 Others: [+ other_r +]%
 
 [? if PNI_in_government = 1 : Budget: [+ budget +] ?]
@@ -66,7 +58,6 @@ Inflation: [+ inflation_2 +]%
 [? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
 
 Economic growth: [+ economic_growth_2 +]%
-
 
 
 # = Public Opinion
@@ -135,14 +126,15 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Rural: PNI: [+ rural_pni_display +]%, Masyumi: [+ rural_masyumi_display +]%, PKI: [+ rural_pki_display +]%, PSI: [+ PSI_name +]?]: [+ rural_psi_display +]%, PSII: [+ rural_psii_display +]%; Parkindo: [+ rural_kristen_display +]%, Katolik: [+ rural_katolik_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Rural: PNI: [+ rural_pni_display +]%, Masyumi: [+ rural_masyumi_display +]%, PKI: [+ rural_pki_display +]%, PSI: [+ rural_psi_display +]%, PSII: [+ rural_psii_display +]%; Parkindo: [+ rural_kristen_display +]%, Katolik: [+ rural_katolik_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
 
-Workers: PNI: [+ workers_pni_display +]%, Masyumi: [+ workers_masyumi_display +]%, PKI: [+ workers_pki_display +]%, PSI: [+ PSI_name +]?]: [+ workers_psi_display +]%, PSII: [+ workers_psii_display +]%; Parkindo: [+ workers_kristen_display +]%, Katolik: [+ workers_katolik_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Workers: PNI: [+ workers_pni_display +]%, Masyumi: [+ workers_masyumi_display +]%, PKI: [+ workers_pki_display +]%, PSI: [+ workers_psi_display +]%, PSII: [+ workers_psii_display +]%; Parkindo: [+ workers_kristen_display +]%, Katolik: [+ workers_katolik_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-Middle Class: PNI: [+ middle_pni_display +]%, Masyumi: [+ middle_masyumi_display +]%, PKI: [+ middle_pki_display +]%, PSI: [+ PSI_name +]?]: [+ middle_psi_display +]%, PSII: [+ middle_psii_display +]%; Parkindo: [+ middle_kristen_display +]%, Katolik: [+ middle_katolik_display +]%, Others: [+ middle_other_display +]% [? if sapd_formed: SAPD: [+ middle_sapd_display +]% ?]
+Middle Class: PNI: [+ middle_pni_display +]%, Masyumi: [+ middle_masyumi_display +]%, PKI: [+ middle_pki_display +]%, PSI: [+ middle_psi_display +]%, PSII: [+ middle_psii_display +]%; Parkindo: [+ middle_kristen_display +]%, Katolik: [+ middle_katolik_display +]%, Others: [+ middle_other_display +]% [? if sapd_formed: SAPD: [+ middle_sapd_display +]% ?]
 
-*Santri*: PNI: [+ santri_pni_display +]%, Masyumi: [+ santri_masyumi_display +]%, PKI: [+ santri_pki_display +]%, PSI: [+ PSI_name +]?]: [+ santri_psi_display +]%, PSII: [+ santri_psii_display +]%; Parkindo: [+ santri_kristen_display +]%, Katolik: [+ santri_katolik_display +]%, Others: [+ santri_other_display +]% [? if sapd_formed: SAPD: [+ santri_sapd_display +]% ?]
+*Santri*: PNI: [+ santri_pni_display +]%, Masyumi: [+ santri_masyumi_display +]%, PKI: [+ santri_pki_display +]%, PSI: [+ santri_psi_display +]%, PSII: [+ santri_psii_display +]%; Parkindo: [+ santri_kristen_display +]%, Katolik: [+ santri_katolik_display +]%, Others: [+ santri_other_display +]% [? if sapd_formed: SAPD: [+ santri_sapd_display +]% ?]
 
-Christians: PNI: [+ christians_pni_display +]%, Masyumi: [+ christians_masyumi_display +]%, PKI: [+ christians_pki_display +]%, PSI: [+ PSI_name +]?]: [+ christians_psi_display +]%, PSII: [+ christians_psii_display +]%; Parkindo: [+ christians_kristen_display +]%, Katolik: [+ christians_katolik_display +]%, Others: [+ christians_other_display +]% [? if sapd_formed: SAPD: [+ christians_sapd_display +]% ?]
+Christians: PNI: [+ christians_pni_display +]%, Masyumi: [+ christians_masyumi_display +]%, PKI: [+ christians_pki_display +]%, PSI: [+ christians_psi_display +]%, PSII: [+ christians_psii_display +]%; Parkindo: [+ christians_kristen_display +]%, Katolik: [+ christians_katolik_display +]%, Others: [+ christians_other_display +]% [? if sapd_formed: SAPD: [+ christians_sapd_display +]% ?]
 
 Support for the Republic: [+ pro_republic_disp +]%
+
