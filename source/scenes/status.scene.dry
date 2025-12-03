@@ -76,17 +76,17 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;">**Masyumi**</span>!}: [+ masyumi_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;">**PSI**</span>!}: [+ psi_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;">**PSII**</span>!}: [+ psii_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;">**PKI**</span>!}: [+ pki_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="Indonesian Christian Party" style="color: #66B2FF;">**Parkindo**</span>!}: [+ kristen_relation : relationships +]
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="Catholic Party" style="color: #330000;">**Katolik**</span>!}: [+ katolik_relation : relationships +]
 
 = Internal Factions of the SPD
 
