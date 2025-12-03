@@ -49,6 +49,7 @@ max-cards: 4
 title: Party Affairs
 card-image: img/Vorwaerts_nr_1.png
 is-deck: true
+on-arrival: month += 1;
 
 - #party_affairs
 
