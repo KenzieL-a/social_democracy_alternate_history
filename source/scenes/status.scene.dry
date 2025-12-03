@@ -110,7 +110,7 @@ PNI: [+ PNI_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
-Masyumi + BVP: [+ Masyumi_votes +]%
+Masyumi: [+ Masyumi_votes +]%
 
 PKI: [+ PKI_votes +]%
 
