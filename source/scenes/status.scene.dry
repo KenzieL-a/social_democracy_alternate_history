@@ -79,7 +79,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Catholic Party" style="color: #330000;"><strong>Katolik</strong></span>!}: [+ katolik_relation : relationships +]
 
-= Internal Factions of the PNI
+= Internal Factions of the <span style="color: #990000;">**PNI**</span>
 
 {!<span class="tooltip-text" title="Wilopo and his group advocates a more moderate stance and economic stability.">Wilopo</span>!}ite strength: [+ wilopo_strength : strength +], dissent: [+ wilopo_dissent : dissent +]
 
