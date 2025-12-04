@@ -14,7 +14,8 @@ The <span style="color: #990000;">**PNI**</span> cannot govern by itself yet, be
 
 - @nasrani: Work together with the <span style="color: #66B2FF;">Christian and Catholic</span> parties.
 - @islam: Warm our relations with the <span style="color: #000000;">Islamic</span> parties.
-- @pki: Strengthen our bonds with the <span style="color: #c00000;">Communist</span> Party.
+- @socialist: Strengthen our bonds with the smaller <span style="color: #FF6666;">Socialist</span> parties.
+- @pki: Work towards repairing relationships with the <span style="color: #c00000;">Communist</span> Party.
 - @pni_alone: The <span style="color: #990000;">PNI</span> can stand alone for now.
 - @easy_discard
 
@@ -27,11 +28,20 @@ on-arrival: resources -= 1; pki_inter_party_seen += 1
 
 The <span style="color: #c00000;">**Communists**</span> have always been our close ally, but we never get the chance to be in government together with them. However this may change.
 
+@socialist
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; psi_relation += 5*(1 - dissent)
+
+Allying the <span style="color: #FF6666;">**PSI**</span> is crucial in securing allies in forming cabinets.
+
+
 @islam
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; masyumi_relation += 5*(1 - dissent)
+on-arrival: resources -= 1; masyumi_relation += 5*(1 - dissent); psii_relation += 3*(1 - dissent)
 
 Even though we have always been in government with them, our relations remain cold, especially of the <span style="color: #000000;">**Masyumi**</span>. However this may change.
 
