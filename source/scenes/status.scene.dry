@@ -33,7 +33,7 @@ Internal dissent: [+ dissent_percent : dissent +]
 
 President: [+ president +]
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Chancellor: [? if chancellor_party == "PNI": <span style="color: #990000;">[+ chancellor +]</span>?][? if chancellor_party == "Masyumi": <span style="color: #000000;">[+ chancellor +]</span>?] ([? if chancellor_party == "Masyumi":<span style="color: #000000;">**Masyumi**</span>?][? if chancellor_party == "PNI":<span style="color: #990000;">**PNI**</span>?])
 
 Konstituante composition:
 
