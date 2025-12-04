@@ -524,7 +524,7 @@ For more information on the politics and government of the Liberal Democratic Er
 - @1951_historical: Begin (historical mode)
 
 @1951_easy
-on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; pki_relation = 29; masyumi_relation = 54; psii_relation = 49; budget = 5;
+on-arrival: difficulty = -1; resources = 4; dues = 3; rb_strength = 2500; budget = 5;
 go-to: 1951_main
 
 @1951_hard
