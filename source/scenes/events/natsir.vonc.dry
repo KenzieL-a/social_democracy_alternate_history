@@ -1,7 +1,8 @@
 title: Hadikusumo's Motion Passes!
 subtitle: New elections scheduled
 new-page: true
-view-if: year = 1951 and month = 2
+view-if: year = 1951 and month >= 2
+frequency: 1000
 tags: event
 max-visits: 1
 
