@@ -41,9 +41,18 @@ Though electorally small, allying the smaller parties like the <span style="colo
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; masyumi_relation += 5*(1 - dissent); psii_relation += 3*(1 - dissent); wilopo_strength += 3
+on-arrival: resources -= 1; 
+go-to: masyumi_op if not pni_in_government and masyumi_in_government; masyumi if pni_in_government and masyumi_in_government;
 
-Even though we have always been in government with them, our relations remain cold, especially of the <span style="color: #000000;">**Masyumi**</span>. However this may change.
+@masyumi_op
+on-arrival: masyumi_relation += 5*(1 - dissent); psii_relation += 3*(1 - dissent); wilopo_strength += 3
+
+We are currently in opposition to the <span style="color: #000000;">**Masyumi**</span> and our relations remain cold. However this may change.
+
+@masyumi
+on-arrival: masyumi_relation += 8*(1 - dissent); psii_relation += 5*(1 - dissent); wilopo_strength += 3
+
+We are currently coalition partners with them, so improving relations comes naturally.
 
 @nasrani
 subtitle: -1 resources
