@@ -20,7 +20,7 @@ The President has appointed Sartono, a prominent <span style="color: #990000;">*
 - @sartono_fails: Sartono fails to form a cabinet in time!
 
 @sartono_succeed
-choose-if: year = 1969
+choose-if: masyumi_relations = 35
 on-arrival: resources -= 1
 unavailable-subtitle: The difficulties of forming a cabinet of two opposing parties prove too great for Sartono.
 
