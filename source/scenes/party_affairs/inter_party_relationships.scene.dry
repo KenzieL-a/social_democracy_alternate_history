@@ -56,7 +56,7 @@ We are currently coalition partners with them, so improving relations comes natu
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; katolik_relation += 5*(1 - dissent); kristen_relation += 5*(1 - dissent); 
+on-arrival: resources -= 1; kristen_relation += 5*(1 - dissent); 
 
 Representing religious minorities, these parties can be reliable partners in regional matters.
 
