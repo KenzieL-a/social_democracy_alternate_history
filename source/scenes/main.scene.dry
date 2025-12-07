@@ -36,7 +36,7 @@ max-cards: 4
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
-[? if year = 1951 and month = 1 : Our motion delivered by Hadikusumo has been passed by the parliament! Hadikusumo's motion demanded the revocation of Government Regulation 39 of 1950 concerning the election of members of local councils because it is deemed "undemocratic" and too favorable towards Masyumi, and to "freeze" the councils created on the basis of it. With this defeat, it has become clear that Natsir's Premiership's days are numbered. ?]
+[? if year = 1951 and month = 1 : Our motion delivered by Hadikusumo has been passed by the parliament! Hadikusumo's motion demanded the revocation of Government Regulation 39 of 1950 concerning the election of members of local councils because it is deemed "undemocratic" and too favorable towards <span style="color: #000000;">**Masyumi**</span>, and to "freeze" the councils created on the basis of it. With this defeat, it has become clear that Natsir's Premiership's days are numbered. ?]
 
 - @party
 - @govt
