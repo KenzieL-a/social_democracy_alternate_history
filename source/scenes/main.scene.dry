@@ -32,6 +32,37 @@ if (Q.advisor_action_timer <= 0) {
     Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' months.';
 }
 !}
+on-display: {!
+if (!document.getElementById('news_tab')) {
+    var button = document.createElement('button');
+    button.style.backgroundColor = '#dddddd';
+    button.className = 'tab_button';
+    button.id = 'news_tab';
+    button.textContent = 'View Right-Wing News';
+    button.onclick = function () {
+        toggleNews();
+    };
+    var contentDiv = document.getElementById('content');
+    contentDiv.appendChild(button);
+    const elements = document.querySelectorAll('.dnvp');
+    let hasTextContent = false;
+    elements.forEach(function (element) {
+        if (element.textContent.trim() !== '') {
+            hasTextContent = true;
+        }
+    });
+    if (hasTextContent) {
+        button.style.backgroundColor = 'rgba(255, 0, 0, 0.5)'; // New color
+    } else {
+        button.style.backgroundColor = '#dddddd'; // Original color
+    }
+    document.querySelectorAll('p').forEach(p => {
+        if (!p.textContent.trim()) {
+            p.remove();
+        }
+    });
+}
+
 max-cards: 4
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
