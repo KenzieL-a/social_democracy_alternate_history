@@ -74,7 +74,7 @@ tags: mins_1928
 choose-if: leverage >= 10 
 view-if: economic_minister_party != "PNI"
 on-arrival: leverage -= 10
-go-to: ministries
+go-to: econ_1
 
 @econ_1
 
@@ -85,11 +85,13 @@ Who shall be our pick for this ministry?
 
 @sujono 
 on-arrival: economic_minister_party = "PNI"; economic_minister = "Sujono Hadinoto"
+go-to: ministries
 
 Sujono Hadinoto of the PNI has been appointed Minister of Trade and Industry.
 
 @wilopo 
 on-arrival: economic_minister_party = "PNI"; economic_minister = "Wilopo"
+go-to: ministries
 
 Wilopo of the PNI has been appointed Minister of Trade and Industry.
 
@@ -101,7 +103,7 @@ tags: mins_1928
 choose-if: leverage >= 10 
 view-if: justice_minister_party != "PNI"
 on-arrival: leverage -= 10
-go-to: ministries
+go-to: justice_1
 
 @justice_1
 
@@ -112,11 +114,13 @@ Who shall be our pick for this ministry?
 
 @susanto
 on-arrival: justice_minister_party = "PNI"; justice_minister = "Susanto Tirtoprodjo"
+go-to: ministries
 
 Susanto Tirtoprodjo of the PNI has been appointed Justice Minister.
 
 @gustaf
 on-arrival: justice_minister_party = "PNI"; justice_minister = "Gustaaf Adolf Maengkom"
+go-to: ministries
 
 Gustaaf Adolf Maengkom of the PNI has been appointed Justice Minister.
 
@@ -128,7 +132,7 @@ tags: mins_1928
 choose-if: leverage >= 10 
 view-if: foreign_minister_party != "PNI"
 on-arrival: leverage -= 10; foreign_minister_party = "PNI"; foreign_minister = "Breitscheid"
-go-to: ministries
+go-to: foreign_1
 
 @foreign_1
 
@@ -140,19 +144,21 @@ Who shall be our pick for this ministry?
 
 @sunario
 on-arrival: foreign_minister_party = "PNI"; foreign_minister = "Soenario Sastrowardoyo"
+go-to: ministries
 
 Soenario Sastrowardoyo of the PNI has been appointed Foreign Minister.
 
 @mukarto
 on-arrival: foreign_minister_party = "PNI"; foreign_minister = "Moekarto Notowidigdo"
+go-to: ministries
 
 Moekarto Notowidigdo of the PNI has been appointed Foreign Minister.
 
 @ruslan
 on-arrival: foreign_minister_party = "PNI"; foreign_minister = "Roeslan Abdoelgani"
+go-to: ministries
 
 Roeslan Abdoelgani of the PNI has been appointed Foreign Minister.
-
 
 @religious
 title: Ministry of Religious Affairs
@@ -190,7 +196,6 @@ go-to: ministries
 
 Rudolf Wissell of the PNI has been appointed labor minister.
 
-
 @enlightenment
 title: Enlightenment Ministry
 subtitle: The Enlightenment Ministry controls the flow of information.
@@ -202,8 +207,6 @@ on-arrival: leverage -= 10; enlightenment_minister_party = "PNI"; enlightenment_
 go-to: ministries
 
 Gustav Radbruch of the PNI has been appointed Justice Minister.
-
-
 
 @no_more
 title: No more ministries.
