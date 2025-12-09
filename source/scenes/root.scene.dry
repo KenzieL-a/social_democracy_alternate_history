@@ -25,6 +25,7 @@ Q.year = 1951;
 Q.month = 0;
 // how many actions have been taken this month?
 Q.month_actions = 0;
+Q.leverage = 0;
 
 // 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
 Q.difficulty = 0;
