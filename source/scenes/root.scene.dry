@@ -326,7 +326,7 @@ Q.interior_minister = 'Assaat';
 Q.interior_minister_party = 'I';
 Q.justice_minister = 'Wongsonegoro';
 Q.justice_minister_party = 'PIR';
-Q.economic_minister = 'Melkias Agustinus Pellaupessy';
+Q.economic_minister = 'Sumitro Djojohadikusumo';
 Q.economic_minister_party = 'Demokrat';
 Q.reichswehr_minister = 'Mohammad Natsir';
 Q.reichswehr_minister_party = 'Masyumi';
@@ -336,6 +336,8 @@ Q.finance_minister = 'Syafruddin Prawiranegara';
 Q.finance_minister_party = 'Masyumi';
 Q.education_minister = 'Bahder Djohan';
 Q.education_minister_party = 'I';
+Q.enlightenment_minister = 'Melkias Agustinus Pellaupessy';
+Q.enlightenment_minister_party = 'Demokrat';
 
 // Events: what has occurred?
 Q.panmasyumierkreumasyumier_seen = 0;
