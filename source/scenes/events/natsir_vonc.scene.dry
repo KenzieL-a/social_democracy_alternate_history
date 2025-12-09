@@ -32,5 +32,5 @@ Sartono was not able to bridge the gaps between the <span style="color: #990000;
 - @begin: Begin negotiations.
 
 @begin
-on-arrival: Q.leverage += 25;
+on-arrival: leverage = 25;
 go-to: ministries
