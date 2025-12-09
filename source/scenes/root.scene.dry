@@ -193,37 +193,33 @@ Q.workers_psii = 0;
 Q.workers_psi = 15;
 Q.workers_kristen = 0;
 Q.workers_katolik = 0;
-Q.workers_pir = 0;
 Q.workers_other = 10;
 
 Q.santri_pni = 15;
-Q.santri_pki = 10;
+Q.santri_pki = 5;
 Q.santri_masyumi = 50;
 Q.santri_psii = 30;
 Q.santri_psi = 0;
 Q.santri_kristen = 0;
 Q.santri_katolik = 0;
-Q.santri_pir = 0;
 Q.santri_other = 10;
 
 Q.middle_pni = 40;
-Q.middle_pki = 10;
+Q.middle_pki = 0;
 Q.middle_masyumi = 10;
 Q.middle_psii = 0;
-Q.middle_psi = 0;
+Q.middle_psi = 10;
 Q.middle_kristen = 10;
 Q.middle_katolik = 5;
-Q.middle_pir = 10;
 Q.middle_other = 15;
 
-Q.rural_pni = 10;
-Q.rural_pki = 30;
+Q.rural_pni = 20;
+Q.rural_pki = 10;
 Q.rural_masyumi = 40;
 Q.rural_psii = 5;
 Q.rural_psi = 5;
 Q.rural_kristen = 5;
 Q.rural_katolik = 5;
-Q.rural_pir = 0;
 Q.rural_other = 15;
 
 Q.christians_pni = 10;
@@ -233,7 +229,6 @@ Q.christians_psii = 0;
 Q.christians_psi = 5;
 Q.christians_kristen = 50;
 Q.christians_katolik = 40;
-Q.christians_pir = 2;
 Q.christians_other = 15;
 
 
