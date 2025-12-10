@@ -155,8 +155,9 @@ Q.budget = 4;
 // Proportion of different social groups, very rough estimates
 Q.workers = 20; 
 Q.middle = 8; 
-Q.santri = 14; 
-Q.rural = 60; 
+Q.aristocrats = 13;
+Q.santri = 17; 
+Q.rural = 50; 
 Q.christians = 4.6;
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
@@ -181,7 +182,7 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['rural', 'workers', 'santri', 'middle', 'christians'];
+Q.classes = ['rural', 'workers', 'santri', 'middle', 'aristocrats', 'christians'];
 Q.parties = ['pni', 'pki', 'masyumi', 'psii', 'psi', 'kristen', 'katolik', 'other'];
 
 // Support for party by social group
@@ -204,7 +205,7 @@ Q.santri_kristen = 0;
 Q.santri_katolik = 0;
 Q.santri_other = 10;
 
-Q.middle_pni = 40;
+Q.middle_pni = 35;
 Q.middle_pki = 0;
 Q.middle_masyumi = 10;
 Q.middle_psii = 0;
@@ -212,6 +213,15 @@ Q.middle_psi = 10;
 Q.middle_kristen = 10;
 Q.middle_katolik = 5;
 Q.middle_other = 15;
+
+Q.aristocrats_pni = 40;
+Q.aristocrats_pki = 0;
+Q.aristocrats_masyumi = 10;
+Q.aristocrats_psii = 3;
+Q.aristocrats_psi = 10;
+Q.aristocrats_kristen = 3;
+Q.aristocrats_katolik = 2;
+Q.aristocrats_other = 15;
 
 Q.rural_pni = 20;
 Q.rural_pki = 10;
@@ -319,9 +329,9 @@ Q.interior_minister_party = 'I';
 Q.justice_minister = 'Wongsonegoro';
 Q.justice_minister_party = 'PIR';
 Q.economic_minister = 'Sumitro Djojohadikusumo';
-Q.economic_minister_party = 'Demokrat';
-Q.reichswehr_minister = 'Mohammad Natsir';
-Q.reichswehr_minister_party = 'Masyumi';
+Q.economic_minister_party = 'PSI';
+Q.publicworks_minister = 'Herman Johannes';
+Q.publicworks_minister_party = 'PIR';
 Q.religious_minister = 'Wahid Hasjim';
 Q.religious_minister_party = 'Masyumi';
 Q.finance_minister = 'Syafruddin Prawiranegara';
@@ -353,22 +363,19 @@ Q.land_reform = 0;
 // works-creation programs (i.e. WTB-plan) - how much have they implemented?
 Q.works_program = 0;
 Q.wtb_implemented = 0;
-// Relations with the Western countries (France, UK).
+
+// Relations with the Western countries (France, UK, USA).
 Q.west_relation = 0;
-// Relations with the Eastern countries (Poland, Cmasyumiechoslovakia)
-Q.east_relation = 0;
+// Relations with the neighboring countries (Malaya, Philippines)
+Q.neighbor_relation = 0;
 // Relations with the Soviet Union
 Q.soviet_relation = 0;
+
 // How much have we exposed the secret rearmament programs?
 Q.rearmament_exposed = 0;
 // reparations vs baseline: young plan is -1.
 Q.reparations = 0;
 Q.reparations_negotiation = 0;
-// nationalimasyumiation_progress is part of the wilopo economic plan.
-Q.nationalimasyumiation_progress = 0;
-// socialimasyumiations is part of the economic democracy card.
-Q.socialimasyumiations = 0;
-Q.nationalimasyumie_budget = 4;
 // have there been any factory takeovers?
 Q.factory_takeovers = 0;
 // progress on the moderate economic plan
@@ -524,7 +531,7 @@ new-page: true
 
 This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
-For more information on the politics and government of the Liberal Democratic Era, see the "Library" page on the top wilopo. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
+For more information on the politics and government of the Republic of Indonesia during the Liberal Democratic Era, see the "Library" page on the top wilopo. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
 
 - @1951_easy: Begin (easy difficulty)
 - @1951_main: Begin (normal difficulty)
