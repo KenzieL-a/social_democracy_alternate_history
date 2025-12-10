@@ -77,18 +77,29 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="The two Christian Parties, Parkindo (Indonesian Christian Party (Protestant)) and the Catholic Party." style="color: #66B2FF;"><strong>Chris</strong></span>!}{!<span class="tooltip-text" title="The two Christian Parties, Parkindo (Indonesian Christian Party (Protestant)) and the Catholic Party." style="color: #330000;"><strong>tians</strong></span>!}: [+ kristen_relation : relationships +]
 
+=Party Leadership
+
+{!<span class="tooltip-text" title="Indonesian Nationalist Party" style="color: #990000;"><strong>PNI</strong></span>!}: Sidik Djojosukarto (Marhaenism)
+
+{!<span class="tooltip-text" title="Council of Indonesian Muslim Associations Party" style="color: #000000;"><strong>Masyumi</strong></span>!}: [+ masyumi_leader +] (Islamism)
+
+{!<span class="tooltip-text" title="Indonesian Socialist Party" style="color: #FF6666;"><strong>PSI</strong></span>!}: Sutan Sjahrir (Popular Socialism)
+
+{!<span class="tooltip-text" title="Indonesian Islamic Union Party" style="color: #003319;"><strong>PSII</strong></span>!}: -
+
+{!<span class="tooltip-text" title="Indonesian Communist Party" style="color: #c00000;"><strong>PKI</strong></span>!}: [+ pki_leader +] (Marxism-Leninism)
 
 = Internal Factions of the <span style="color: #990000;">**PNI**</span>
 
-{!<span class="tooltip-text" title="Wilopo and his group advocates a more moderate stance and economic stability.">Wilopo</span>!}ite strength: [+ wilopo_strength : strength +], dissent: [+ wilopo_dissent : dissent +]
+{!<span class="tooltip-text" title="Wilopo and his group mostly consists of moderate, younger figures of the party. They are generally more concerned over administrative and economic policies. The group stood close to the Vice-President Hatta.">Wilopo</span>!} group strength: [+ wilopo_strength : strength +], dissent: [+ wilopo_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Sidik Djojosukarto and his group pushes the party to a radical and pro-labour stance in solving economic and social problems.">Sidik</span>!}ite strength: [+ sidik_strength : strength +], dissent: [+ sidik_dissent : dissent +]
+{!<span class="tooltip-text" title="Sidik Djojosukarto and his group pushes the party to a pro-labor and socialist stance in solving economic and social problems. It consists of PNI members with no higher Western education and had come to prominence through leadership of mass organizations.">Sidik</span>!} group strength: [+ sidik_strength : strength +], dissent: [+ sidik_dissent : dissent +]
 
-{!<span class="tooltip-text" title="PNI-Partindo are pragmatists who are only interested in bureaucratic affairs, and most of its members are close confidants of the President.">PNI-Partindo</span>!} strength: [+ partindo_strength : strength +], dissent: [+ partindo_dissent : dissent +]
+{!<span class="tooltip-text" title="Sartono, Suwirjo, and their group are mostly administrators and bureaucrats. They are more radical in their nationalism and more focused on the nation's prestige and identity. Most of its members are close confidants of President Soekarno.">Sartono-Suwirjo</span>!} group strength: [+ partindo_strength : strength +], dissent: [+ partindo_dissent : dissent +]
 
 [? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
 
-
+@defense
 
 [? if PNI_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
@@ -128,6 +139,8 @@ Rural: PNI: [+ rural_pni_display +]%, Masyumi: [+ rural_masyumi_display +]%, PKI
 Workers: PNI: [+ workers_pni_display +]%, Masyumi: [+ workers_masyumi_display +]%, PKI: [+ workers_pki_display +]%, PSI: [+ workers_psi_display +]%, PSII: [+ workers_psii_display +]%; Parkindo: [+ workers_kristen_display +]%, Katolik: [+ workers_katolik_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
 Middle Class: PNI: [+ middle_pni_display +]%, Masyumi: [+ middle_masyumi_display +]%, PKI: [+ middle_pki_display +]%, PSI: [+ middle_psi_display +]%, PSII: [+ middle_psii_display +]%; Parkindo: [+ middle_kristen_display +]%, Katolik: [+ middle_katolik_display +]%, Others: [+ middle_other_display +]% [? if sapd_formed: SAPD: [+ middle_sapd_display +]% ?]
+
+Aristocrats: PNI: [+ aristocrats_pni_display +]%, Masyumi: [+ aristocrats_masyumi_display +]%, PKI: [+ aristocrats_pki_display +]%, PSI: [+ aristocrats_psi_display +]%, PSII: [+ aristocrats_psii_display +]%; Parkindo: [+ aristocrats_kristen_display +]%, Katolik: [+ aristocrats_katolik_display +]%, Others: [+ aristocrats_other_display +]% [? if sapd_formed: SAPD: [+ aristocrats_sapd_display +]% ?]
 
 *Santri*: PNI: [+ santri_pni_display +]%, Masyumi: [+ santri_masyumi_display +]%, PKI: [+ santri_pki_display +]%, PSI: [+ santri_psi_display +]%, PSII: [+ santri_psii_display +]%; Parkindo: [+ santri_kristen_display +]%, Katolik: [+ santri_katolik_display +]%, Others: [+ santri_other_display +]% [? if sapd_formed: SAPD: [+ santri_sapd_display +]% ?]
 
